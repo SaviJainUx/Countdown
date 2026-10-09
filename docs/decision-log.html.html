@@ -5,8 +5,8 @@
 :root{color-scheme:light;--ink:#20242c;--sub:#6d7480;--line:#e7e9ed;--surface:#f6f7f9;--accent:#27384c;--ring:#9ab6d9}*{box-sizing:border-box}
 body{margin:0;background:#f2f3f5;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.45}
 .wrap{max-width:900px;margin:64px auto;padding:0 20px}.sheet{background:white;border:1px solid #e5e8ed;border-radius:18px;box-shadow:0 12px 40px #1723330a;overflow:hidden}
-.header{padding:30px 34px 22px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.17em;color:#8a929d;margin:0 0 8px}
-h1{font-size:25px;letter-spacing:-.045em;line-height:1.2;margin:0 0 6px;font-weight:680}.sub{color:var(--sub);margin:0;font-size:13px}
+.header{padding:30px 34px 22px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.08em;color:#8a929d;margin:0 0 8px}
+h1{font-size:25px;letter-spacing:.08em;line-height:1.2;margin:0 0 6px;font-weight:680}.sub{color:var(--sub);margin:0;font-size:13px;letter-spacing:.08em}
 .toolbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:18px 34px;border-bottom:1px solid var(--line)}
 button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 .search,.select{height:37px;border:1px solid #dfe3e9;border-radius:9px;background:white;color:var(--ink);padding:0 12px}.search{flex:1;min-width:160px}.select{width:180px}
@@ -18,7 +18,7 @@ dialog{border:1px solid #e2e5e9;border-radius:15px;box-shadow:0 24px 80px #15223
 @media(max-width:650px){.wrap{margin:18px auto;padding:0 10px}.header{padding:23px 19px}.toolbar{padding:14px 19px}.search{width:100%;flex-basis:100%}.select{flex:1;width:auto}.item{padding:14px 19px}.detail{padding:16px 19px}.meta{padding:12px 19px 8px}.footer{padding:14px 19px}h1{font-size:23px}}
 </style></head><body>
 <div class="wrap"><main class="sheet">
-<header class="header"><p class="eyebrow">COUNTDOWN · PRODUCT DOCUMENTATION</p><h1>Decision Log</h1><p class="sub">The decisions we've made — and the reason behind each one.</p></header>
+<header class="header"><p class="eyebrow">COUNTDOWN · PRODUCT DOCUMENTATION</p><h1>Decision Log</h1><p class="sub">The decisions we've made — and the UX reasoning behind each one.</p></header>
 <section class="toolbar" aria-label="Decision filters"><input id="search" class="search" type="search" placeholder="Search decisions…" aria-label="Search decisions"><select id="category" class="select" aria-label="Filter by category"><option value="All">All categories</option></select><button id="toggleAll" class="btn" type="button">Show all reasons</button><button id="add" class="btn dark" type="button">+ Add decision</button></section>
 <div class="meta"><span id="count">20 decisions</span><span>Click a decision to view its reason</span></div><div id="items"></div>
 <footer class="footer"><span>Editable · Works offline · Saved in this browser when supported</span><span><button class="mini" id="export" type="button">Export backup (.json)</button> <button class="mini" id="import" type="button">Import backup</button><input type="file" id="file" accept=".json,application/json" hidden></span></footer>
